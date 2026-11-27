@@ -38,54 +38,58 @@
             // 
             // btnBaslat
             // 
-            btnBaslat.Location = new Point(362, 53);
+            btnBaslat.Location = new Point(41, 364);
             btnBaslat.Name = "btnBaslat";
-            btnBaslat.Size = new Size(75, 23);
+            btnBaslat.Size = new Size(116, 50);
             btnBaslat.TabIndex = 0;
             btnBaslat.Text = "Başlat";
             btnBaslat.UseVisualStyleBackColor = true;
+            btnBaslat.Click += btnBaslat_Click;
             // 
             // btnDurdur
             // 
-            btnDurdur.Location = new Point(324, 93);
+            btnDurdur.Location = new Point(235, 364);
             btnDurdur.Name = "btnDurdur";
-            btnDurdur.Size = new Size(75, 23);
+            btnDurdur.Size = new Size(116, 50);
             btnDurdur.TabIndex = 1;
             btnDurdur.Text = "Durdur";
             btnDurdur.UseVisualStyleBackColor = true;
+            btnDurdur.Click += btnDurdur_Click;
             // 
             // btnTemizle
             // 
-            btnTemizle.Location = new Point(437, 152);
+            btnTemizle.Location = new Point(435, 364);
             btnTemizle.Name = "btnTemizle";
-            btnTemizle.Size = new Size(75, 23);
+            btnTemizle.Size = new Size(113, 50);
             btnTemizle.TabIndex = 2;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = true;
+            btnTemizle.Click += btnTemizle_Click;
             // 
             // btnKaydet
             // 
-            btnKaydet.Location = new Point(385, 227);
+            btnKaydet.Location = new Point(629, 364);
             btnKaydet.Name = "btnKaydet";
-            btnKaydet.Size = new Size(75, 23);
+            btnKaydet.Size = new Size(113, 50);
             btnKaydet.TabIndex = 3;
             btnKaydet.Text = "Kaydet";
             btnKaydet.UseVisualStyleBackColor = true;
+            btnKaydet.Click += btnKaydet_Click;
             // 
             // lstKayitlar
             // 
             lstKayitlar.FormattingEnabled = true;
-            lstKayitlar.Location = new Point(584, 277);
+            lstKayitlar.Location = new Point(41, 16);
             lstKayitlar.Name = "lstKayitlar";
-            lstKayitlar.Size = new Size(120, 94);
+            lstKayitlar.Size = new Size(701, 304);
             lstKayitlar.TabIndex = 4;
             // 
             // lblDurum
             // 
             lblDurum.AutoSize = true;
-            lblDurum.Location = new Point(280, 249);
+            lblDurum.Location = new Point(360, 334);
             lblDurum.Name = "lblDurum";
-            lblDurum.Size = new Size(71, 15);
+            lblDurum.Size = new Size(70, 15);
             lblDurum.TabIndex = 5;
             lblDurum.Text = "Kayıt: Kapalı";
             // 
@@ -100,8 +104,10 @@
             Controls.Add(btnTemizle);
             Controls.Add(btnDurdur);
             Controls.Add(btnBaslat);
+            KeyPreview = true;
             Name = "Form1";
             Text = "Form1";
+            KeyDown += Form1_KeyDown;
             ResumeLayout(false);
             PerformLayout();
         }
