@@ -86,12 +86,13 @@
             // 
             // lblDurum
             // 
-            lblDurum.AutoSize = true;
-            lblDurum.Location = new Point(360, 334);
+            lblDurum.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            lblDurum.Location = new Point(248, 323);
             lblDurum.Name = "lblDurum";
-            lblDurum.Size = new Size(70, 15);
+            lblDurum.Size = new Size(300, 30);
             lblDurum.TabIndex = 5;
             lblDurum.Text = "Kayıt: Kapalı";
+            lblDurum.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -109,7 +110,6 @@
             Text = "Form1";
             KeyDown += Form1_KeyDown;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

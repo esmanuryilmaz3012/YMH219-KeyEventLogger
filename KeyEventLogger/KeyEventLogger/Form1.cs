@@ -103,7 +103,7 @@ namespace KeyEventLogger
             string zaman = DateTime.Now.ToString("HH:mm:ss");
 
             // Tuş adını ve saati listeye tek satır olarak ekle
-            lstKayitlar.Items.Add($"{zaman}  {e.KeyCode}");
+            lstKayitlar.Items.Add($"{zaman}  {e.KeyCode,-12}");
         }
     }
 }
